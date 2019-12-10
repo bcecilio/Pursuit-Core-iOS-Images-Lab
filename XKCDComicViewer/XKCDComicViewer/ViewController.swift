@@ -13,24 +13,39 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var comicStepper: UIStepper!
-    
-    var urlImage = "https://imgs.xkcd.com/comics/data_error.png"
+
+    var comicDetail = [ComicBooks]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+//        textField.delegate = self
+        loadData(issue: 614)
     }
     
-    func setImage(with urlString: String, completion: @escaping (Result<UIImage, AppError>) -> ()) {
-        self.urlImage = urlString
+    func loadData(issue: Int) {
         
-        NetworkHelper.shared.performDataTask(with: urlImage) { (result) in
+        _ = ComicBookAPI.getComics(with: issue) { [weak self](result) in
             switch result {
             case .failure(let appError):
-                completion(.failure(.networkClientError(appError)))
+                print("\(appError)")
+            case .success(let comics):
+                DispatchQueue.main.async {
+                    self?.textField.text = comics.num.description
+                    self?.getImage(urlImage: comics.img)
+                }
+            }
+        }
+    }
+    
+    func getImage(urlImage: String) {
+        NetworkHelper.shared.performDataTask(with: urlImage) { [weak self] (result) in
+            switch result {
+            case .failure(let appError):
+                print("\(appError)")
             case .success(let data):
-                if let image = UIImage(data: data) {
-                    completion(.success(image))
+                DispatchQueue.main.async {
+                let comicImage = UIImage(data: data)
+                self?.imageView.image = comicImage
                 }
             }
         }

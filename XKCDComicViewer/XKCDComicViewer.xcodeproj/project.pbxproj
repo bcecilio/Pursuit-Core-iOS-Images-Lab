@@ -13,9 +13,10 @@
 		B78D5F3C239B08B700D4E6EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78D5F3A239B08B700D4E6EE /* Main.storyboard */; };
 		B78D5F3E239B08B900D4E6EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B78D5F3D239B08B900D4E6EE /* Assets.xcassets */; };
 		B78D5F41239B08B900D4E6EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78D5F3F239B08B900D4E6EE /* LaunchScreen.storyboard */; };
-		B7A42C9023A034C200DDA351 /* ImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A42C8F23A034C200DDA351 /* ImageClient.swift */; };
 		B7A42C9223A0382A00DDA351 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A42C9123A0382A00DDA351 /* NetworkHelper.swift */; };
 		B7A42C9423A03A3E00DDA351 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A42C9323A03A3E00DDA351 /* AppError.swift */; };
+		B7A42C9623A046F600DDA351 /* ComicClientAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A42C9523A046F600DDA351 /* ComicClientAPI.swift */; };
+		B7A42C9823A048D300DDA351 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A42C9723A048D300DDA351 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +28,10 @@
 		B78D5F3D239B08B900D4E6EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B78D5F40239B08B900D4E6EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B78D5F42239B08B900D4E6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7A42C8F23A034C200DDA351 /* ImageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClient.swift; sourceTree = "<group>"; };
 		B7A42C9123A0382A00DDA351 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		B7A42C9323A03A3E00DDA351 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		B7A42C9523A046F600DDA351 /* ComicClientAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicClientAPI.swift; sourceTree = "<group>"; };
+		B7A42C9723A048D300DDA351 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,8 @@
 				B78D5F34239B08B700D4E6EE /* AppDelegate.swift */,
 				B78D5F36239B08B700D4E6EE /* SceneDelegate.swift */,
 				B78D5F38239B08B700D4E6EE /* ViewController.swift */,
-				B7A42C8F23A034C200DDA351 /* ImageClient.swift */,
+				B7A42C9523A046F600DDA351 /* ComicClientAPI.swift */,
+				B7A42C9723A048D300DDA351 /* Model.swift */,
 				B7A42C9123A0382A00DDA351 /* NetworkHelper.swift */,
 				B7A42C9323A03A3E00DDA351 /* AppError.swift */,
 				B78D5F3A239B08B700D4E6EE /* Main.storyboard */,
@@ -147,11 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7A42C9823A048D300DDA351 /* Model.swift in Sources */,
 				B78D5F39239B08B700D4E6EE /* ViewController.swift in Sources */,
 				B7A42C9223A0382A00DDA351 /* NetworkHelper.swift in Sources */,
+				B7A42C9623A046F600DDA351 /* ComicClientAPI.swift in Sources */,
 				B7A42C9423A03A3E00DDA351 /* AppError.swift in Sources */,
 				B78D5F35239B08B700D4E6EE /* AppDelegate.swift in Sources */,
-				B7A42C9023A034C200DDA351 /* ImageClient.swift in Sources */,
 				B78D5F37239B08B700D4E6EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
