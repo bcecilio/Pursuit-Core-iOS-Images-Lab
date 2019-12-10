@@ -7,33 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B78D5F35239B08B700D4E6EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78D5F34239B08B700D4E6EE /* AppDelegate.swift */; };
-		B78D5F37239B08B700D4E6EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78D5F36239B08B700D4E6EE /* SceneDelegate.swift */; };
-		B78D5F39239B08B700D4E6EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78D5F38239B08B700D4E6EE /* ViewController.swift */; };
-		B78D5F3C239B08B700D4E6EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78D5F3A239B08B700D4E6EE /* Main.storyboard */; };
-		B78D5F3E239B08B900D4E6EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B78D5F3D239B08B900D4E6EE /* Assets.xcassets */; };
-		B78D5F41239B08B900D4E6EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78D5F3F239B08B900D4E6EE /* LaunchScreen.storyboard */; };
-		B7A42C9023A034C200DDA351 /* ImageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A42C8F23A034C200DDA351 /* ImageClient.swift */; };
-		B7A42C9223A0382A00DDA351 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A42C9123A0382A00DDA351 /* NetworkHelper.swift */; };
-		B7A42C9423A03A3E00DDA351 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A42C9323A03A3E00DDA351 /* AppError.swift */; };
+		B78D5F55239B0A3500D4E6EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78D5F54239B0A3500D4E6EE /* AppDelegate.swift */; };
+		B78D5F57239B0A3500D4E6EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78D5F56239B0A3500D4E6EE /* SceneDelegate.swift */; };
+		B78D5F59239B0A3500D4E6EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78D5F58239B0A3500D4E6EE /* ViewController.swift */; };
+		B78D5F5C239B0A3500D4E6EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78D5F5A239B0A3500D4E6EE /* Main.storyboard */; };
+		B78D5F5E239B0A3600D4E6EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B78D5F5D239B0A3600D4E6EE /* Assets.xcassets */; };
+		B78D5F61239B0A3600D4E6EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78D5F5F239B0A3600D4E6EE /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B78D5F31239B08B700D4E6EE /* XKCDComicViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XKCDComicViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B78D5F34239B08B700D4E6EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B78D5F36239B08B700D4E6EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B78D5F38239B08B700D4E6EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B78D5F3B239B08B700D4E6EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B78D5F3D239B08B900D4E6EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B78D5F40239B08B900D4E6EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		B78D5F42239B08B900D4E6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B7A42C8F23A034C200DDA351 /* ImageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClient.swift; sourceTree = "<group>"; };
-		B7A42C9123A0382A00DDA351 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
-		B7A42C9323A03A3E00DDA351 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		B78D5F51239B0A3500D4E6EE /* PokemonCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B78D5F54239B0A3500D4E6EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B78D5F56239B0A3500D4E6EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B78D5F58239B0A3500D4E6EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B78D5F5B239B0A3500D4E6EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B78D5F5D239B0A3600D4E6EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B78D5F60239B0A3600D4E6EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B78D5F62239B0A3600D4E6EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B78D5F2E239B08B700D4E6EE /* Frameworks */ = {
+		B78D5F4E239B0A3500D4E6EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,75 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B78D5F28239B08B700D4E6EE = {
+		B78D5F48239B0A3500D4E6EE = {
 			isa = PBXGroup;
 			children = (
-				B78D5F33239B08B700D4E6EE /* XKCDComicViewer */,
-				B78D5F32239B08B700D4E6EE /* Products */,
+				B78D5F53239B0A3500D4E6EE /* PokemonCards */,
+				B78D5F52239B0A3500D4E6EE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B78D5F32239B08B700D4E6EE /* Products */ = {
+		B78D5F52239B0A3500D4E6EE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B78D5F31239B08B700D4E6EE /* XKCDComicViewer.app */,
+				B78D5F51239B0A3500D4E6EE /* PokemonCards.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B78D5F33239B08B700D4E6EE /* XKCDComicViewer */ = {
+		B78D5F53239B0A3500D4E6EE /* PokemonCards */ = {
 			isa = PBXGroup;
 			children = (
-				B78D5F34239B08B700D4E6EE /* AppDelegate.swift */,
-				B78D5F36239B08B700D4E6EE /* SceneDelegate.swift */,
-				B78D5F38239B08B700D4E6EE /* ViewController.swift */,
-				B7A42C8F23A034C200DDA351 /* ImageClient.swift */,
-				B7A42C9123A0382A00DDA351 /* NetworkHelper.swift */,
-				B7A42C9323A03A3E00DDA351 /* AppError.swift */,
-				B78D5F3A239B08B700D4E6EE /* Main.storyboard */,
-				B78D5F3D239B08B900D4E6EE /* Assets.xcassets */,
-				B78D5F3F239B08B900D4E6EE /* LaunchScreen.storyboard */,
-				B78D5F42239B08B900D4E6EE /* Info.plist */,
+				B78D5F54239B0A3500D4E6EE /* AppDelegate.swift */,
+				B78D5F56239B0A3500D4E6EE /* SceneDelegate.swift */,
+				B78D5F58239B0A3500D4E6EE /* ViewController.swift */,
+				B78D5F5A239B0A3500D4E6EE /* Main.storyboard */,
+				B78D5F5D239B0A3600D4E6EE /* Assets.xcassets */,
+				B78D5F5F239B0A3600D4E6EE /* LaunchScreen.storyboard */,
+				B78D5F62239B0A3600D4E6EE /* Info.plist */,
 			);
-			path = XKCDComicViewer;
+			path = PokemonCards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B78D5F30239B08B700D4E6EE /* XKCDComicViewer */ = {
+		B78D5F50239B0A3500D4E6EE /* PokemonCards */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B78D5F45239B08B900D4E6EE /* Build configuration list for PBXNativeTarget "XKCDComicViewer" */;
+			buildConfigurationList = B78D5F65239B0A3600D4E6EE /* Build configuration list for PBXNativeTarget "PokemonCards" */;
 			buildPhases = (
-				B78D5F2D239B08B700D4E6EE /* Sources */,
-				B78D5F2E239B08B700D4E6EE /* Frameworks */,
-				B78D5F2F239B08B700D4E6EE /* Resources */,
+				B78D5F4D239B0A3500D4E6EE /* Sources */,
+				B78D5F4E239B0A3500D4E6EE /* Frameworks */,
+				B78D5F4F239B0A3500D4E6EE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = XKCDComicViewer;
-			productName = XKCDComicViewer;
-			productReference = B78D5F31239B08B700D4E6EE /* XKCDComicViewer.app */;
+			name = PokemonCards;
+			productName = PokemonCards;
+			productReference = B78D5F51239B0A3500D4E6EE /* PokemonCards.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B78D5F29239B08B700D4E6EE /* Project object */ = {
+		B78D5F49239B0A3500D4E6EE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Brendon Cecilio";
 				TargetAttributes = {
-					B78D5F30239B08B700D4E6EE = {
+					B78D5F50239B0A3500D4E6EE = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
 				};
 			};
-			buildConfigurationList = B78D5F2C239B08B700D4E6EE /* Build configuration list for PBXProject "XKCDComicViewer" */;
+			buildConfigurationList = B78D5F4C239B0A3500D4E6EE /* Build configuration list for PBXProject "PokemonCards" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,58 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = B78D5F28239B08B700D4E6EE;
-			productRefGroup = B78D5F32239B08B700D4E6EE /* Products */;
+			mainGroup = B78D5F48239B0A3500D4E6EE;
+			productRefGroup = B78D5F52239B0A3500D4E6EE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B78D5F30239B08B700D4E6EE /* XKCDComicViewer */,
+				B78D5F50239B0A3500D4E6EE /* PokemonCards */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		B78D5F2F239B08B700D4E6EE /* Resources */ = {
+		B78D5F4F239B0A3500D4E6EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B78D5F41239B08B900D4E6EE /* LaunchScreen.storyboard in Resources */,
-				B78D5F3E239B08B900D4E6EE /* Assets.xcassets in Resources */,
-				B78D5F3C239B08B700D4E6EE /* Main.storyboard in Resources */,
+				B78D5F61239B0A3600D4E6EE /* LaunchScreen.storyboard in Resources */,
+				B78D5F5E239B0A3600D4E6EE /* Assets.xcassets in Resources */,
+				B78D5F5C239B0A3500D4E6EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B78D5F2D239B08B700D4E6EE /* Sources */ = {
+		B78D5F4D239B0A3500D4E6EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B78D5F39239B08B700D4E6EE /* ViewController.swift in Sources */,
-				B7A42C9223A0382A00DDA351 /* NetworkHelper.swift in Sources */,
-				B7A42C9423A03A3E00DDA351 /* AppError.swift in Sources */,
-				B78D5F35239B08B700D4E6EE /* AppDelegate.swift in Sources */,
-				B7A42C9023A034C200DDA351 /* ImageClient.swift in Sources */,
-				B78D5F37239B08B700D4E6EE /* SceneDelegate.swift in Sources */,
+				B78D5F59239B0A3500D4E6EE /* ViewController.swift in Sources */,
+				B78D5F55239B0A3500D4E6EE /* AppDelegate.swift in Sources */,
+				B78D5F57239B0A3500D4E6EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B78D5F3A239B08B700D4E6EE /* Main.storyboard */ = {
+		B78D5F5A239B0A3500D4E6EE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B78D5F3B239B08B700D4E6EE /* Base */,
+				B78D5F5B239B0A3500D4E6EE /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		B78D5F3F239B08B900D4E6EE /* LaunchScreen.storyboard */ = {
+		B78D5F5F239B0A3600D4E6EE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B78D5F40239B08B900D4E6EE /* Base */,
+				B78D5F60239B0A3600D4E6EE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -178,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		B78D5F43239B08B900D4E6EE /* Debug */ = {
+		B78D5F63239B0A3600D4E6EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -238,7 +226,7 @@
 			};
 			name = Debug;
 		};
-		B78D5F44239B08B900D4E6EE /* Release */ = {
+		B78D5F64239B0A3600D4E6EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -292,36 +280,36 @@
 			};
 			name = Release;
 		};
-		B78D5F46239B08B900D4E6EE /* Debug */ = {
+		B78D5F66239B0A3600D4E6EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 879MP5M96B;
-				INFOPLIST_FILE = XKCDComicViewer/Info.plist;
+				INFOPLIST_FILE = PokemonCards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.brendoncecilio.XKCDComicViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brendoncecilio.PokemonCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		B78D5F47239B08B900D4E6EE /* Release */ = {
+		B78D5F67239B0A3600D4E6EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 879MP5M96B;
-				INFOPLIST_FILE = XKCDComicViewer/Info.plist;
+				INFOPLIST_FILE = PokemonCards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.brendoncecilio.XKCDComicViewer;
+				PRODUCT_BUNDLE_IDENTIFIER = com.brendoncecilio.PokemonCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -331,25 +319,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B78D5F2C239B08B700D4E6EE /* Build configuration list for PBXProject "XKCDComicViewer" */ = {
+		B78D5F4C239B0A3500D4E6EE /* Build configuration list for PBXProject "PokemonCards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B78D5F43239B08B900D4E6EE /* Debug */,
-				B78D5F44239B08B900D4E6EE /* Release */,
+				B78D5F63239B0A3600D4E6EE /* Debug */,
+				B78D5F64239B0A3600D4E6EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B78D5F45239B08B900D4E6EE /* Build configuration list for PBXNativeTarget "XKCDComicViewer" */ = {
+		B78D5F65239B0A3600D4E6EE /* Build configuration list for PBXNativeTarget "PokemonCards" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B78D5F46239B08B900D4E6EE /* Debug */,
-				B78D5F47239B08B900D4E6EE /* Release */,
+				B78D5F66239B0A3600D4E6EE /* Debug */,
+				B78D5F67239B0A3600D4E6EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B78D5F29239B08B700D4E6EE /* Project object */;
+	rootObject = B78D5F49239B0A3500D4E6EE /* Project object */;
 }
