@@ -21,13 +21,7 @@ class ViewController: UIViewController {
         }
     }
     
-    var searchQuery = "" {
-        didSet {
-            DispatchQueue.main.async {
-                self.searchBarQuery()
-            }
-        }
-    }
+    var searchQuery = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,18 +50,7 @@ class ViewController: UIViewController {
     }
     
     func searchBarQuery() {
-        PokemonCardAPI.getCards { (result) in
-            switch result {
-                case .failure(let appError):
-                print("app error: \(appError)")
-            case .success(let pokemonCards):
-                DispatchQueue.main.async {
-                    for type in pokemonCards {
-                    self.pokemonInfo = pokemonCards
-                    }
-                }
-            }
-        }
+        pokemonInfo = pokemonInfo.filter{($0.types?.first?.contains(searchQuery.lowercased()))!}
     }
 }
 
@@ -94,10 +77,10 @@ extension ViewController: UITableViewDelegate {
 extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard !searchText.isEmpty else {
-            searchBarQuery()
-            loadData()
+        
             return
         }
         searchQuery = searchText
+        searchBarQuery()
     }
 }
