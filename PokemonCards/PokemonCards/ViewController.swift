@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
     
     func loadData() {
-        PokemonCardAPI.getCards(with: "pokemon") { (result) in
+        PokemonCardAPI.getCards() { (result) in
             switch result {
             case .failure(let appError):
                 print("app error: \(appError)")

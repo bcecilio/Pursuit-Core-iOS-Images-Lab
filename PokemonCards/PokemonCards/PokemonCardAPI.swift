@@ -9,11 +9,18 @@
 import Foundation
 
 struct PokemonCardAPI {
-    static func getCards(with urlString: String, completion: @escaping (Result<Cards, AppError>) -> ()) {
+    static func getCards(completion: @escaping (Result<Cards, AppError>) -> ()) {
         
-        let urlCards = "https://api.pokemontcg.io/v1/cards"
+        let urlCards = "https://api.pokemontcg.io/v1/cards?from=0&to=50"
         
-        NetworkHelper.shared.performDataTask(with: urlCards) { (result) in
+        guard let url = URL(string: urlCards) else {
+            completion(.failure(.badURL(urlCards)))
+            return
+        }
+        
+        let request = URLRequest(url: url)
+        
+        NetworkHelper.shared.performDataTask(with: request) { (result) in
             switch result {
             case .failure(let appError):
                 completion(.failure(.networkClientError(appError)))
