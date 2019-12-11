@@ -50,6 +50,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Pokemon" id="6rI-gu-uIM"/>
                     <connections>
+                        <outlet property="searchBar" destination="YXh-zH-WDl" id="bJq-2v-ZN2"/>
                         <outlet property="tableView" destination="oQd-8G-bPt" id="MoO-S4-wxB"/>
                     </connections>
                 </viewController>
