@@ -37,6 +37,13 @@ class ViewController: UIViewController {
         loadData()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailController = segue.destination as? DetailController, let indexPath = tableView.indexPathForSelectedRow else {
+            return
+        }
+        detailController.pokemonDetail = pokemonInfo[indexPath.row]
+    }
+    
     func loadData() {
         PokemonCardAPI.getCards() { (result) in
             switch result {
@@ -55,7 +62,9 @@ class ViewController: UIViewController {
                 print("app error: \(appError)")
             case .success(let pokemonCards):
                 DispatchQueue.main.async {
-                self.pokemonInfo = pokemonCards.filter{($0.types?.description.lowercased().contains(self.searchQuery.lowercased()))!}
+                    for type in pokemonCards {
+                    self.pokemonInfo = pokemonCards
+                    }
                 }
             }
         }

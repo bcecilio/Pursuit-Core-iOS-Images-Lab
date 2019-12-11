@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B72D2B6323A1A2FD00E4D587 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B72D2B6223A1A2FD00E4D587 /* DetailController.swift */; };
 		B78D5F55239B0A3500D4E6EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78D5F54239B0A3500D4E6EE /* AppDelegate.swift */; };
 		B78D5F57239B0A3500D4E6EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78D5F56239B0A3500D4E6EE /* SceneDelegate.swift */; };
 		B78D5F59239B0A3500D4E6EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B78D5F58239B0A3500D4E6EE /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B72D2B6223A1A2FD00E4D587 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		B78D5F51239B0A3500D4E6EE /* PokemonCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokemonCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B78D5F54239B0A3500D4E6EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B78D5F56239B0A3500D4E6EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				B78D5F56239B0A3500D4E6EE /* SceneDelegate.swift */,
 				B78D5F58239B0A3500D4E6EE /* ViewController.swift */,
 				B78D5F5A239B0A3500D4E6EE /* Main.storyboard */,
+				B72D2B6223A1A2FD00E4D587 /* DetailController.swift */,
 				B7A42C9D23A08EF600DDA351 /* PokemonData.swift */,
 				B7A42C9F23A0904F00DDA351 /* PokemonCardAPI.swift */,
 				B7A42C9923A08EA300DDA351 /* NetworkHelper.swift */,
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B72D2B6323A1A2FD00E4D587 /* DetailController.swift in Sources */,
 				B7A42C9A23A08EA300DDA351 /* NetworkHelper.swift in Sources */,
 				B7A42C9E23A08EF600DDA351 /* PokemonData.swift in Sources */,
 				B78D5F59239B0A3500D4E6EE /* ViewController.swift in Sources */,
