@@ -17,9 +17,10 @@ struct Cards: Decodable {
     let imageUrl: String
     let types: [String]
     let set: String
-    let weakness: [Weakness]
+    let weakness: Weakness?
 }
 
 struct Weakness: Decodable {
-    let type: String
+    let type: String?
+    let value: String
 }

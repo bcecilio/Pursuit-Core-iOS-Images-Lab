@@ -22,7 +22,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        tableView.dataSource = self
+        loadData()
     }
     
     func loadData() {
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
             case .failure(let appError):
                 print("app error: \(appError)")
             case .success(let pokemonCards):
-                self.pokemonInfo = pokemonCards
+                self.pokemonInfo = [pokemonCards]
             }
         }
     }
