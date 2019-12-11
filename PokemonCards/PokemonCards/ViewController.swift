@@ -12,39 +12,41 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var pokemonInfo = [PokemonCards]()
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+    var pokemonInfo = [Cards](){
+        didSet{
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+        }
     }
     
-    func loadData(urlString: String) {
-        let pokemon = PokemonCardAPI.getCards(with: urlString) { (result) in
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
+    func loadData() {
+        PokemonCardAPI.getCards(with: "pokemon") { (result) in
             switch result {
             case .failure(let appError):
-                print("\(appError)")
-            case .success(let pokemonData):
-                DispatchQueue.main.async{
-                    
-                }
+                print("app error: \(appError)")
+            case .success(let pokemonCards):
+                self.pokemonInfo = pokemonCards
             }
         }
     }
 }
-
-extension ViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return pokemonInfo.count
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cardCell", for: indexPath)
+    extension ViewController: UITableViewDataSource {
+        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+            return pokemonInfo.count
+        }
         
-        let pokemonCell = pokemonInfo[indexPath.row]
-        cell.textLabel?.text = pokemonCell.
-        return cell
-    }
-    
-    
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cardCell", for: indexPath)
+            
+            let pokemonCell = pokemonInfo[indexPath.row]
+            cell.textLabel?.text = pokemonCell.name
+            return cell
+        }
 }
