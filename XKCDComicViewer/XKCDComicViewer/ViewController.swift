@@ -59,15 +59,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func mostRecentButtonPressed(_ sender: UIButton) {
+        loadData(issue: Int(comicStepper!.maximumValue))
     }
     
     @IBAction func randomButtonPressed(_ sender: UIButton) {
+        
     }
     
     @IBAction func stepperPressed(_ sender: UIStepper) {
-        let comicImage = UIImage(cgImage: sender.value as! CGImage)
-        imageView.image = comicImage
+        loadData(issue: Int(sender.value))
     }
     
 }
-

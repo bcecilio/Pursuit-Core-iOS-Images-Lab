@@ -64,6 +64,7 @@ extension ViewController: UITableViewDataSource {
         
         let pokemonCell = pokemonInfo[indexPath.row]
         cell.textLabel?.text = pokemonCell.name
+        cell.detailTextLabel?.text = pokemonCell.types?.first?.description
         return cell
     }
 }
