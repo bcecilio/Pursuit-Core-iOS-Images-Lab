@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     }
     
     func searchBarQuery() {
-        pokemonInfo = pokemonInfo.filter{($0.types?.first?.lowercased().contains(searchQuery.lowercased()))!}
+        pokemonInfo = pokemonInfo.filter{($0.types?.first?.lowercased().contains(searchQuery.lowercased()) ?? false )}
     }
 }
 
