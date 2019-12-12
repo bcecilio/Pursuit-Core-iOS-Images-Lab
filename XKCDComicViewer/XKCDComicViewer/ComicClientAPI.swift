@@ -21,7 +21,7 @@ struct ComicBookAPI {
             case .success(let data):
                 do {
                     let comicData = try JSONDecoder().decode(ComicBooks.self, from: data)
-                    let comics = comicData
+                    _ = comicData
                     completion(.success(comicData))
                 } catch {
                     completion(.failure(.decodingError(error)))

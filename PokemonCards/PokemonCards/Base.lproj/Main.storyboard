@@ -69,8 +69,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="doP-dU-B90">
-                                <rect key="frame" x="20" y="162" width="207" height="156"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="doP-dU-B90">
+                                <rect key="frame" x="20" y="162" width="207" height="301"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BP-wU-A68">
@@ -106,6 +106,13 @@
                         <viewLayoutGuide key="safeArea" id="uzm-fY-JL0"/>
                     </view>
                     <navigationItem key="navigationItem" id="LJG-jz-gwG"/>
+                    <connections>
+                        <outlet property="pokemonImage" destination="doP-dU-B90" id="yqH-lA-iUe"/>
+                        <outlet property="pokemonNameLabel" destination="6BP-wU-A68" id="uN3-yI-a5J"/>
+                        <outlet property="pokemonSetLabel" destination="O2J-Jw-nsG" id="pTF-33-acw"/>
+                        <outlet property="pokemonTypeLabel" destination="uXw-Jh-LRR" id="93n-7c-xLO"/>
+                        <outlet property="pokemonWeaknessLabel" destination="eok-EK-amL" id="hCf-4P-kSK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XOf-MO-lQc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

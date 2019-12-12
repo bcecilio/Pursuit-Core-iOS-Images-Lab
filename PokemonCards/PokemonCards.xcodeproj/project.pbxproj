@@ -18,6 +18,7 @@
 		B7A42C9C23A08ED200DDA351 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A42C9B23A08ED200DDA351 /* AppError.swift */; };
 		B7A42C9E23A08EF600DDA351 /* PokemonData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A42C9D23A08EF600DDA351 /* PokemonData.swift */; };
 		B7A42CA023A0904F00DDA351 /* PokemonCardAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7A42C9F23A0904F00DDA351 /* PokemonCardAPI.swift */; };
+		B7F54E7A23A2D32700856FC9 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7F54E7923A2D32700856FC9 /* UIImageView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		B7A42C9B23A08ED200DDA351 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		B7A42C9D23A08EF600DDA351 /* PokemonData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonData.swift; sourceTree = "<group>"; };
 		B7A42C9F23A0904F00DDA351 /* PokemonCardAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonCardAPI.swift; sourceTree = "<group>"; };
+		B7F54E7923A2D32700856FC9 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				B78D5F56239B0A3500D4E6EE /* SceneDelegate.swift */,
 				B78D5F58239B0A3500D4E6EE /* ViewController.swift */,
 				B78D5F5A239B0A3500D4E6EE /* Main.storyboard */,
+				B7F54E7923A2D32700856FC9 /* UIImageView+Extensions.swift */,
 				B72D2B6223A1A2FD00E4D587 /* DetailController.swift */,
 				B7A42C9D23A08EF600DDA351 /* PokemonData.swift */,
 				B7A42C9F23A0904F00DDA351 /* PokemonCardAPI.swift */,
@@ -156,6 +159,7 @@
 				B72D2B6323A1A2FD00E4D587 /* DetailController.swift in Sources */,
 				B7A42C9A23A08EA300DDA351 /* NetworkHelper.swift in Sources */,
 				B7A42C9E23A08EF600DDA351 /* PokemonData.swift in Sources */,
+				B7F54E7A23A2D32700856FC9 /* UIImageView+Extensions.swift in Sources */,
 				B78D5F59239B0A3500D4E6EE /* ViewController.swift in Sources */,
 				B7A42C9C23A08ED200DDA351 /* AppError.swift in Sources */,
 				B78D5F55239B0A3500D4E6EE /* AppDelegate.swift in Sources */,

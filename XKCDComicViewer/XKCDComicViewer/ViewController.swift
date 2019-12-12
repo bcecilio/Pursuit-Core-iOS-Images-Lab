@@ -20,10 +20,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 //        textField.delegate = self
         loadData(issue: 614)
+        configureStepper()
     }
     
     func loadData(issue: Int) {
-        
         _ = ComicBookAPI.getComics(with: issue) { [weak self](result) in
             switch result {
             case .failure(let appError):
@@ -50,11 +50,24 @@ class ViewController: UIViewController {
             }
         }
     }
+    
+    func configureStepper() {
+        comicStepper.minimumValue = 614
+        comicStepper.maximumValue = 625
+        comicStepper.value = 1
+        comicStepper.stepValue = 1
+    }
 
     @IBAction func mostRecentButtonPressed(_ sender: UIButton) {
     }
     
     @IBAction func randomButtonPressed(_ sender: UIButton) {
     }
+    
+    @IBAction func stepperPressed(_ sender: UIStepper) {
+        let comicImage = UIImage(cgImage: sender.value as! CGImage)
+        imageView.image = comicImage
+    }
+    
 }
 
