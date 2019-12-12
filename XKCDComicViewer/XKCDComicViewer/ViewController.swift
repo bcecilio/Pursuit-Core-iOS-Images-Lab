@@ -13,12 +13,12 @@ class ViewController: UIViewController {
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var comicStepper: UIStepper!
-
+    
     var comicDetail = [ComicBooks]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        textField.delegate = self
+        //        textField.delegate = self
         loadData(issue: 614)
         configureStepper()
     }
@@ -44,8 +44,8 @@ class ViewController: UIViewController {
                 print("\(appError)")
             case .success(let data):
                 DispatchQueue.main.async {
-                let comicImage = UIImage(data: data)
-                self?.imageView.image = comicImage
+                    let comicImage = UIImage(data: data)
+                    self?.imageView.image = comicImage
                 }
             }
         }
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
         comicStepper.value = 1
         comicStepper.stepValue = 1
     }
-
+    
     @IBAction func mostRecentButtonPressed(_ sender: UIButton) {
         loadData(issue: Int(comicStepper!.maximumValue))
     }

@@ -30,7 +30,7 @@ class DetailController: UIViewController {
             return
         }
         pokemonNameLabel.text = pokemonInfo.name
-        pokemonWeaknessLabel.text = pokemonInfo.weakness.debugDescription
+        pokemonWeaknessLabel.text = pokemonInfo.weakness?.type
         pokemonTypeLabel.text = pokemonInfo.types?.first
         pokemonSetLabel.text = pokemonInfo.set
         pokemonImage.getImage(with: pokemon.imageUrlHiRes ?? "") { (result) in
