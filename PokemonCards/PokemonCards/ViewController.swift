@@ -78,7 +78,7 @@ extension ViewController: UITableViewDelegate {
 extension ViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard !searchText.isEmpty else {
-        
+            loadData()
             return
         }
         searchQuery = searchText
