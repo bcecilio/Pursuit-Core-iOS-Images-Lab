@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
     
     func loadData(issue: Int) {
-        _ = ComicBookAPI.getComics(with: issue) { [weak self](result) in
+        _ = ComicBookAPI.getComics(with: issue) { [weak self] (result) in
             switch result {
             case .failure(let appError):
                 print("\(appError)")
